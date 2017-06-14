@@ -1,10 +1,15 @@
+from todo.student import Student
+
+def hello():
+    s=Student('yjl')
+    print(s.name)
+    print("hello world.")
+
 def main():
-    pass
+    hello()
 
 
 if __name__ == '__main__':
     main()
 
 
-def hello():
-    print("hello world.")
