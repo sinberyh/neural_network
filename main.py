@@ -9,8 +9,6 @@ def hello():
     print("changed https to ssh")
 
 
-<<<<<<< HEAD
-
 async def wget(host):
     print('wget %s...' % host)
     connect = asyncio.open_connection(host, 80)
@@ -27,14 +25,12 @@ async def wget(host):
     writer.close()
 
 
-=======
->>>>>>> yjl
 def main():
     loop = asyncio.get_event_loop()
     tasks = [wget(host)
              for host in ['www.sina.com.cn', 'www.sohu.com', 'www.163.com']]
     loop.run_until_complete(asyncio.wait(tasks))
-    loop.close()
+    loop.close2()
 
 
 if __name__ == '__main__':
