@@ -5,7 +5,7 @@ def hello():
     s = Student('yjl')
     print(s.name)
     print("hello world.")
-    print("changed https to ssh")
+    print("changed https to ssh, yjl&rita")
 
 
 def main():
