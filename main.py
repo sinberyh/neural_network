@@ -6,7 +6,8 @@ def hello():
     s = Student('yjl')
     print(s.name)
     print("hello world.")
-    print("changed https to ssh")
+
+    print("changed https to ssh, changed.")
 
 
 async def wget(host):
@@ -30,7 +31,7 @@ def main():
     tasks = [wget(host)
              for host in ['www.sina.com.cn', 'www.sohu.com', 'www.163.com']]
     loop.run_until_complete(asyncio.wait(tasks))
-    loop.close()
+    loop.close2()
 
 
 if __name__ == '__main__':
